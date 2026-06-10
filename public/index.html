@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sannidhi Estates | Premium Land Investments</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(11, 38, 99, 0.4), rgba(11, 38, 99, 0.1));
+        }
+        @keyframes fade-in-up {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fade-in-up 0.8s ease-out forwards;
+        }
+    </style>
+
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#edeeef",
+                      "on-secondary-container": "#745700",
+                      "outline-variant": "#c5c6d1",
+                      "surface-bright": "#f8f9fa",
+                      "on-tertiary-fixed-variant": "#384570",
+                      "outline": "#757681",
+                      "tertiary": "#1a2852",
+                      "on-primary-fixed": "#00174b",
+                      "secondary-container": "#fdce62",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-container": "#9daadc",
+                      "on-secondary-fixed": "#251a00",
+                      "on-primary-fixed-variant": "#2e4481",
+                      "inverse-surface": "#2e3132",
+                      "on-error-container": "#93000a",
+                      "on-background": "#191c1d",
+                      "background": "#f8f9fa",
+                      "inverse-primary": "#b4c5ff",
+                      "surface-variant": "#e1e3e4",
+                      "surface-container-high": "#e7e8e9",
+                      "secondary-fixed-dim": "#eec056",
+                      "surface": "#f8f9fa",
+                      "on-error": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#444650",
+                      "on-surface": "#191c1d",
+                      "on-secondary-fixed-variant": "#5b4300",
+                      "on-tertiary-fixed": "#091842",
+                      "surface-dim": "#d9dadb",
+                      "primary-fixed": "#dbe1ff",
+                      "secondary-fixed": "#ffdf9c",
+                      "surface-container-highest": "#e1e3e4",
+                      "tertiary-container": "#313e69",
+                      "surface-tint": "#475c9a",
+                      "secondary": "#785a00",
+                      "on-primary-container": "#95aaee",
+                      "inverse-on-surface": "#f0f1f2",
+                      "primary": "#0b2663",
+                      "on-tertiary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "tertiary-fixed": "#dbe1ff",
+                      "tertiary-fixed-dim": "#b7c5f8",
+                      "surface-container-low": "#f3f4f5",
+                      "on-primary": "#ffffff",
+                      "primary-container": "#273d7a",
+                      "error-container": "#ffdad6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "margin-desktop": "64px",
+                      "container-max": "1280px",
+                      "gutter": "24px",
+                      "stack-sm": "8px",
+                      "margin-mobile": "20px",
+                      "stack-md": "24px",
+                      "section-gap": "120px",
+                      "stack-lg": "48px"
+              },
+              "fontFamily": {
+                      "label-sm": ["Montserrat"],
+                      "body-md": ["Montserrat"],
+                      "headline-md": ["Playfair Display"],
+                      "body-lg": ["Montserrat"],
+                      "headline-lg-mobile": ["Playfair Display"],
+                      "headline-lg": ["Playfair Display"],
+                      "headline-sm": ["Playfair Display"],
+                      "title-lg": ["Montserrat"],
+                      "display-lg": ["Playfair Display"],
+                      "label-md": ["Montserrat"]
+              },
+              "fontSize": {
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                      "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "700"}],
+                      "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "title-lg": ["20px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                      "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-surface-container-lowest text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full bg-white/80 dark:bg-surface-container/80 backdrop-blur-xl z-50 border-b border-outline-variant/30 dark:border-outline/20 shadow-sm dark:shadow-none h-20">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-full">
+<div class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary dark:text-primary-fixed">SANNIDHI ESTATES</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-secondary font-bold pb-1" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#about">About Us</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#why-us">Why Sannidhi</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#projects">Projects</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#market">Gallery</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-secondary text-on-primary px-6 py-2 rounded-lg font-label-md hover:brightness-110 active:scale-95 transition-all shadow-md">Book a Enquiry</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Entry Arch." src="arch.jpg"/>
+<div class="absolute inset-0 bg-primary/30 backdrop-blur-[2px]"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in">
+<h1 class="font-headline-lg text-headline-lg md:text-display-lg text-white mb-6">Building Your Future, One Plot at a Time</h1>
+<p class="font-body-lg text-body-lg text-white/90 mb-10 max-w-2xl mx-auto">Trusted land investments with clear titles, strategic locations, and exceptional growth potential. Secure your legacy with Sannidhi.</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-title-lg hover:shadow-xl hover:-translate-y-1 transition-all">Explore Projects</button>
+<button class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-lg font-title-lg hover:bg-white/20 transition-all">Download Brochure</button>
+</div>
+</div>
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-8 md:gap-24 animate-fade-in delay-500">-->
+<!--&lt;!&ndash;<div class="text-center">&ndash;&gt;-->
+<!--&lt;!&ndash;<p class="text-secondary font-headline-md text-headline-md" id="counter-1">12+</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p class="text-white/70 font-label-sm text-label-sm uppercase tracking-widest">Projects Delivered</p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="text-center">&ndash;&gt;-->
+<!--&lt;!&ndash;<p class="text-secondary font-headline-md text-headline-md" id="counter-2">5000+</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p class="text-white/70 font-label-sm text-label-sm uppercase tracking-widest">Happy Customers</p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="text-center">&ndash;&gt;-->
+<!--&lt;!&ndash;<p class="text-secondary font-headline-md text-headline-md" id="counter-3">1500+</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p class="text-white/70 font-label-sm text-label-sm uppercase tracking-widest">Acres Developed</p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="text-center">&ndash;&gt;-->
+<!--&lt;!&ndash;<p class="text-secondary font-headline-md text-headline-md" id="counter-4">25+</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p class="text-white/70 font-label-sm text-label-sm uppercase tracking-widest">Years of Trust</p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--</div>-->
+</section>
+<!-- About Section -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto" id="about">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -z-10"></div>
+<img class="rounded-xl shadow-2xl" data-alt="A professional architectural blueprint laying on a high-end mahogany office desk, bathed in warm afternoon sunlight from a large window. A designer pen and a pair of spectacles rest on the paper, symbolizing meticulous planning and institutional trust. The setting is a luxury real estate office with a sophisticated, light-mode corporate aesthetic." src="logo.png"/>
+</div>
+<div class="space-y-8">
+<span class="text-secondary font-label-md text-label-md tracking-[0.2em] uppercase">The Sannidhi Legacy</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">A Vision for Generational Wealth</h2>
+<p class="text-on-surface-variant font-body-md text-body-md leading-relaxed">
+                    At Sannidhi Estates, we believe land is more than just property; it's the foundation of your future. For over two decades, we have been pioneers in identifying high-growth corridors and transforming them into secure, premium investment opportunities for discerning families.
+                </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<div class="p-6 bg-surface-container-low rounded-lg border-l-4 border-secondary">
+<h4 class="font-title-lg text-primary mb-2">Vision</h4>
+<p class="text-label-sm">Leading the industry in transparent land acquisition.</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-lg border-l-4 border-secondary">
+<h4 class="font-title-lg text-primary mb-2">Mission</h4>
+<p class="text-label-sm">Empowering investors with secure high-growth assets.</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-lg border-l-4 border-secondary">
+<h4 class="font-title-lg text-primary mb-2">Values</h4>
+<p class="text-label-sm">Integrity, Precision, and Customer-First approach.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="bg-surface-container-low py-section-gap" id="why-us">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Precision in Every Detail</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Why thousands of high-net-worth investors trust Sannidhi Estates with their capital.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="glass-card p-10 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all group">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 group-hover:scale-110 transition-transform block">verified_user</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Clear Titles</h3>
+<p class="text-on-surface-variant">Every plot is meticulously vetted with 100% legal clearance and heritage records verified for complete peace of mind.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-card p-10 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all group">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 group-hover:scale-110 transition-transform block">location_on</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Strategic Locations</h3>
+<p class="text-on-surface-variant">We only select sites in high-growth corridors with massive infrastructure development potential and ROI projection.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-card p-10 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all group">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 group-hover:scale-110 transition-transform block">hub</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Prime Connectivity</h3>
+<p class="text-on-surface-variant">Proximity to national highways, airports, and upcoming industrial hubs ensures your investment remains accessible and valuable.</p>
+</div>
+<!-- Card 4 -->
+<div class="glass-card p-10 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all group">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 group-hover:scale-110 transition-transform block">trending_up</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Investment Growth</h3>
+<p class="text-on-surface-variant">Our historic performance shows a consistent 20-30% year-on-year appreciation across all completed projects.</p>
+</div>
+<!-- Card 5 -->
+<div class="glass-card p-10 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all group">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 group-hover:scale-110 transition-transform block">foundation</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Trusted Development</h3>
+<p class="text-on-surface-variant">World-class infrastructure including wide internal roads, underground drainage, and designer landscaping provided at every site.</p>
+</div>
+<!-- Card 6 -->
+<div class="glass-card p-10 rounded-xl border border-outline-variant/30 hover:border-secondary transition-all group">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 group-hover:scale-110 transition-transform block">sentiment_very_satisfied</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Customer First</h3>
+<p class="text-on-surface-variant">A dedicated relationship manager assists you from the initial site visit through registration and long-term resale support.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto" id="projects">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12">
+<div>
+<span class="text-secondary font-label-md text-label-md tracking-[0.2em] uppercase">Projects</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2">Elite Plotted Developments</h2>
+</div>
+<!--<button class="text-primary font-label-md border-b-2 border-primary pb-1 flex items-center gap-2 hover:text-secondary hover:border-secondary transition-all">-->
+<!--                View All Projects <span class="material-symbols-outlined">arrow_right_alt</span>-->
+<!--</button>-->
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Project 1 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl mb-6 h-80">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A luxurious perspective view of a high-end suburban gated community. Wide, clean asphalt roads are lined with designer streetlights and lush royal palm trees. The sky is a clear, brilliant blue, and the entire scene exudes an air of exclusivity and modern architectural perfection. The lighting is crisp and detailed, emphasizing the premium quality of the estate." src="clubhouse.jpg"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-secondary text-white px-3 py-1 rounded-full text-label-sm">DTCP Approved</span>
+<span class="bg-primary text-white px-3 py-1 rounded-full text-label-sm">RERA: P12345</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Sannidhi Estates</h3>
+<p class="text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Patnam,Chitoor</p>
+</div>
+<div class="text-right">
+<p class="text-secondary font-bold text-lg">Starts ₹24.5L</p>
+<p class="text-label-sm text-on-surface-variant">200 - 400 Sq. Yards</p>
+</div>
+</div>
+</div>
+
+</div>
+
+
+</section>
+<!-- Amenities Grid -->
+<section class="bg-primary text-on-primary py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4">World-Class Infrastructure</h2>
+<p class="text-on-primary-container max-w-2xl mx-auto opacity-80">We deliver fully developed landscapes ready for construction, featuring premium utilities.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+<div class="flex flex-col items-center gap-4 p-8 border border-on-primary/10 rounded-xl hover:bg-white/5 transition-all cursor-default">
+<span class="material-symbols-outlined text-4xl text-secondary">edit_road</span>
+<span class="font-label-md text-center">40ft BT Roads</span>
+</div>
+<div class="flex flex-col items-center gap-4 p-8 border border-on-primary/10 rounded-xl hover:bg-white/5 transition-all cursor-default">
+<span class="material-symbols-outlined text-4xl text-secondary">park</span>
+<span class="font-label-md text-center">Avenue Plantation</span>
+</div>
+<div class="flex flex-col items-center gap-4 p-8 border border-on-primary/10 rounded-xl hover:bg-white/5 transition-all cursor-default">
+<span class="material-symbols-outlined text-4xl text-secondary">water_drop</span>
+<span class="font-label-md text-center">Overhead Tank</span>
+</div>
+<div class="flex flex-col items-center gap-4 p-8 border border-on-primary/10 rounded-xl hover:bg-white/5 transition-all cursor-default">
+<span class="material-symbols-outlined text-4xl text-secondary">shield</span>
+<span class="font-label-md text-center">24/7 Security</span>
+</div>
+<div class="flex flex-col items-center gap-4 p-8 border border-on-primary/10 rounded-xl hover:bg-white/5 transition-all cursor-default">
+<span class="material-symbols-outlined text-4xl text-secondary">electric_bolt</span>
+<span class="font-label-md text-center">Underground Cables</span>
+</div>
+<div class="flex flex-col items-center gap-4 p-8 border border-on-primary/10 rounded-xl hover:bg-white/5 transition-all cursor-default">
+<span class="material-symbols-outlined text-4xl text-secondary">waves</span>
+<span class="font-label-md text-center">U/G Drainage</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Investment Benefits -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto overflow-hidden" id="market">
+<!--<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">-->
+<!--<div class="space-y-8">-->
+<!--<h2 class="font-headline-lg text-headline-lg text-primary">Why Invest in Land?</h2>-->
+<!--<p class="text-on-surface-variant font-body-md text-body-md">Land is a finite resource. Unlike other assets, it is tangible, secure, and possesses the highest potential for long-term appreciation in growing economies.</p>-->
+<!--<div class="space-y-6">-->
+<!--<div class="p-6 bg-surface-container rounded-xl flex items-center gap-6">-->
+<!--<div class="w-20 h-20 bg-primary text-secondary rounded-full flex items-center justify-center shrink-0">-->
+<!--<span class="font-headline-sm">0%</span>-->
+<!--</div>-->
+<!--<div>-->
+<!--<h4 class="font-title-lg text-primary">Low Depreciation Risk</h4>-->
+<!--<p class="text-label-sm text-on-surface-variant">Buildings age, but the soil beneath them only gains value with time and infrastructure development.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="p-6 bg-surface-container rounded-xl flex items-center gap-6">-->
+<!--<div class="w-20 h-20 bg-secondary text-on-primary rounded-full flex items-center justify-center shrink-0">-->
+<!--<span class="font-headline-sm">300%</span>-->
+<!--</div>-->
+<!--<div>-->
+<!--<h4 class="font-title-lg text-primary">High Appreciation Potential</h4>-->
+<!--<p class="text-label-sm text-on-surface-variant">Strategic plots near industrial corridors often triple in value within a 5 to 7-year investment horizon.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="relative">-->
+<!--<img class="rounded-xl shadow-2xl" data-alt="A clean, minimalist 3D rendering of a graph showing a steep upward trend, placed on a high-gloss table with a reflection of a luxury residential estate in the background. The visual represents financial growth and high ROI, using a sleek and premium design language consistent with corporate modern aesthetics. Cool blue tones and crisp white highlights dominate the scene." src="https://lh3.googleusercontent.com/aida/AP1WRLvuOUo0vpZPSbVX7vmDoQFaSV80FzPuKJZh-LaEMg1EHb3lTGd20hmrXrlResalWhFjSKB8q4ycq6RI6HNgSAxs_aWgLsmVwuEkeFCoYBFBCfQQ6hx1TYvl_QTfoxisJzEjZT09BfkMeR3Tq2xUMO3SJejfjcbXftpxFfmk217O2BaT7AgryZvVEFDLM85Rx8UQ6CSBacsMy44orrlRufZA4SJzptlM7Z6Vlu1Prqq02GtYwkb7oNSfOQ0"/>-->
+<!--<div class="absolute -bottom-8 -right-8 glass-card p-8 rounded-xl border border-outline-variant max-w-xs shadow-lg">-->
+<!--<p class="text-primary font-bold mb-2">Did You Know?</p>-->
+<!--<p class="text-label-sm text-on-surface-variant italic">"Real estate is the only investment that provides both high security and the potential for explosive growth in developing markets."</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Project 1 -->
+        <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-xl mb-6 h-80">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A luxurious perspective view of a high-end suburban gated community. Wide, clean asphalt roads are lined with designer streetlights and lush royal palm trees. The sky is a clear, brilliant blue, and the entire scene exudes an air of exclusivity and modern architectural perfection. The lighting is crisp and detailed, emphasizing the premium quality of the estate." src="clubhouse.jpg"/>
+            </div>
+
+        </div>
+
+        <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-xl mb-6 h-80">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A luxurious perspective view of a high-end suburban gated community. Wide, clean asphalt roads are lined with designer streetlights and lush royal palm trees. The sky is a clear, brilliant blue, and the entire scene exudes an air of exclusivity and modern architectural perfection. The lighting is crisp and detailed, emphasizing the premium quality of the estate." src="clubhouse.jpg"/>
+            </div>
+
+        </div>
+
+        <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-xl mb-6 h-80">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A luxurious perspective view of a high-end suburban gated community. Wide, clean asphalt roads are lined with designer streetlights and lush royal palm trees. The sky is a clear, brilliant blue, and the entire scene exudes an air of exclusivity and modern architectural perfection. The lighting is crisp and detailed, emphasizing the premium quality of the estate." src="clubhouse.jpg"/>
+            </div>
+
+        </div>
+
+        <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-xl mb-6 h-80">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A luxurious perspective view of a high-end suburban gated community. Wide, clean asphalt roads are lined with designer streetlights and lush royal palm trees. The sky is a clear, brilliant blue, and the entire scene exudes an air of exclusivity and modern architectural perfection. The lighting is crisp and detailed, emphasizing the premium quality of the estate." src="clubhouse.jpg"/>
+            </div>
+
+        </div>
+
+        <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-xl mb-6 h-80">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A luxurious perspective view of a high-end suburban gated community. Wide, clean asphalt roads are lined with designer streetlights and lush royal palm trees. The sky is a clear, brilliant blue, and the entire scene exudes an air of exclusivity and modern architectural perfection. The lighting is crisp and detailed, emphasizing the premium quality of the estate." src="clubhouse.jpg"/>
+            </div>
+
+        </div>
+
+        <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-xl mb-6 h-80">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A luxurious perspective view of a high-end suburban gated community. Wide, clean asphalt roads are lined with designer streetlights and lush royal palm trees. The sky is a clear, brilliant blue, and the entire scene exudes an air of exclusivity and modern architectural perfection. The lighting is crisp and detailed, emphasizing the premium quality of the estate." src="clubhouse.jpg"/>
+            </div>
+
+        </div>
+
+        <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-xl mb-6 h-80">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A luxurious perspective view of a high-end suburban gated community. Wide, clean asphalt roads are lined with designer streetlights and lush royal palm trees. The sky is a clear, brilliant blue, and the entire scene exudes an air of exclusivity and modern architectural perfection. The lighting is crisp and detailed, emphasizing the premium quality of the estate." src="clubhouse.jpg"/>
+            </div>
+
+        </div>
+
+        <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-xl mb-6 h-80">
+                <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A luxurious perspective view of a high-end suburban gated community. Wide, clean asphalt roads are lined with designer streetlights and lush royal palm trees. The sky is a clear, brilliant blue, and the entire scene exudes an air of exclusivity and modern architectural perfection. The lighting is crisp and detailed, emphasizing the premium quality of the estate." src="clubhouse.jpg"/>
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+<!-- Lead Form & Map -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 bg-white rounded-3xl shadow-xl overflow-hidden">
+<div class="lg:col-span-5 p-12 md:p-16 space-y-8">
+<h2 class="font-headline-md text-headline-md text-primary">Connect with US</h2>
+<p class="text-on-surface-variant">Ready to secure your plot? Fill out the form below and our investment specialist will contact you within 24 hours.</p>
+<form class="space-y-6">
+<div>
+<label class="block font-label-md text-primary mb-2">Full Name</label>
+<input class="w-full border-0 border-b-2 border-outline-variant focus:border-secondary focus:ring-0 px-0 py-3 transition-colors" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-primary mb-2">Phone Number</label>
+<input class="w-full border-0 border-b-2 border-outline-variant focus:border-secondary focus:ring-0 px-0 py-3 transition-colors" placeholder="+91 98765 43210" type="tel"/>
+</div>
+<div>
+
+</div>
+<button class="w-full bg-secondary text-on-primary py-4 rounded-lg font-title-lg hover:brightness-110 shadow-lg transition-all">Schedule a Visit</button>
+</form>
+</div>
+<div class="lg:col-span-7 h-[400px] lg:h-auto">
+<iframe data-location="Hyderabad" frameborder="0" height="100%" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?q=Hyderabad&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%">
+</iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full pt-section-gap pb-stack-lg bg-primary dark:bg-surface-container-lowest">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop">
+<div class="md:col-span-2">
+<div class="font-headline-md text-headline-md text-on-primary dark:text-on-surface mb-6">SANNIDHI ESTATES</div>
+<p class="text-on-primary/70 dark:text-on-surface-variant max-w-sm mb-8">Precision in Investment. Legacy in Land. We help you build the foundation for a wealthy future through premium land developments.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-on-primary/20 flex items-center justify-center text-on-primary hover:bg-secondary hover:border-secondary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-on-primary/20 flex items-center justify-center text-on-primary hover:bg-secondary hover:border-secondary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">thumb_up</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-on-primary/20 flex items-center justify-center text-on-primary hover:bg-secondary hover:border-secondary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">photo_camera</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-secondary font-bold mb-6"></h4>
+<!--<ul class="space-y-4">-->
+<!--<li><a class="text-on-primary/70 dark:text-on-surface-variant hover:text-on-primary dark:hover:text-primary hover:underline transition-all" href="#">Investor Portal</a></li>-->
+<!--<li><a class="text-on-primary/70 dark:text-on-surface-variant hover:text-on-primary dark:hover:text-primary hover:underline transition-all" href="#">Current Projects</a></li>-->
+<!--<li><a class="text-on-primary/70 dark:text-on-surface-variant hover:text-on-primary dark:hover:text-primary hover:underline transition-all" href="#">Legal Certifications</a></li>-->
+<!--<li><a class="text-on-primary/70 dark:text-on-surface-variant hover:text-on-primary dark:hover:text-primary hover:underline transition-all" href="#">Company Profile</a></li>-->
+<!--</ul>-->
+</div>
+<div>
+<h4 class="text-secondary font-bold mb-6">Contact Us</h4>
+<ul class="space-y-4 text-on-primary/70 dark:text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">mail</span> info@sannidhiestates.com</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">call</span> +91 40 1234 5678</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary">location_on</span> Jubilee Hills, Hyderabad, India</li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-section-gap pt-8 border-t border-on-primary/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-primary/50 dark:text-on-surface-variant text-label-sm">© 2024 Sannidhi Estates. Precision in Investment. Legacy in Land.</p>
+<div class="flex gap-8 text-label-sm text-on-primary/50 dark:text-on-surface-variant">
+<a class="hover:text-on-primary" href="#">Privacy Policy</a>
+</div>
+</footer>
+<!-- FAB for quick contact -->
+<button class="fixed bottom-8 right-8 bg-secondary text-on-primary w-16 h-16 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-40">
+<span class="material-symbols-outlined text-3xl">chat</span>
+</button>
+<script>
+        // Simple counter animation
+        function animateCounter(id, target) {
+            let count = 0;
+            const element = document.getElementById(id);
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                count += increment;
+                if (count >= target) {
+                    element.innerText = target + (id.includes('1') || id.includes('4') ? '+' : '+');
+                    clearInterval(timer);
+                } else {
+                    element.innerText = Math.floor(count) + '+';
+                }
+            }, 20);
+        }
+
+        // Initialize counters when they come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter('counter-1', 12);
+                    animateCounter('counter-2', 5000);
+                    animateCounter('counter-3', 1500);
+                    animateCounter('counter-4', 25);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(document.getElementById('counter-1').parentElement.parentElement);
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar translucent shift on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+                header.classList.remove('bg-white/80');
+                header.classList.add('bg-white');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.add('bg-white/80');
+                header.classList.remove('bg-white');
+            }
+        });
+    </script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBcr2zlsiyBBc1IdHi6ft36SzniUmFXL1I",
+      authDomain: "sannidhi-e79a9.firebaseapp.com",
+      projectId: "sannidhi-e79a9",
+      storageBucket: "sannidhi-e79a9.firebasestorage.app",
+      messagingSenderId: "500412796385",
+      appId: "1:500412796385:web:581b5175cb49e0f1d456a0",
+      measurementId: "G-RWPDDN567T"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+</body></html>
